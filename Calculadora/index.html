@@ -1,0 +1,70 @@
+<!-- Nome dos integrantes: 
+-Analice de Aquino Guimarães;
+-Leonardo Soares de Souza;
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho do 1° bimestre</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script rel="JavaScript" src="JavaScript.js" defer></script>
+    <script src="https://kit.fontawesome.com/66e2119c78.js" crossorigin="anonymous" ></script>
+</head>
+<body>
+    <header>
+        
+    </header>
+    
+    <main>
+        <!-- tela onde aparece os valores -->
+        <section class="calculadora">
+            <div class="resultado">
+                <div id="conta_anterior"></div>
+                <div id="result"></div>
+            </div>
+            <!--(INICIO) Elementos da calculadora -->
+            <div class="digitos" >
+                
+                <div class="btn opf" id="limpar" value="limpar" onclick="limpar('')">CE</div>
+                <div class="btn op" id="" value="porcentagem" onclick="calculadora('%')">%</div>
+                <div class="btn op" id="potencia" value="potencia" onclick="calculadora('^')">^</div>
+                <div class="btn opf" id="apagar" value="apagar" onclick="back()"><i class="fa-solid fa-delete-left"></i></div>
+               
+                <!-- --------------------------------------------------------------- -->
+                <div class="btn" id="num7" value="7" onclick="calculadora(7)">7</div>
+                <div class="btn" id="num8" value="8" onclick="calculadora(8)">8</div>
+                <div class="btn" id="num9" value="9" onclick="calculadora(9)">9</div>
+                <div class="btn op" id="multi" value="*" onclick="calculadora('*')">*</div>
+                <!-- --------------------------------------------------------------- -->
+                <div class="btn" id="num4" value="4" onclick="calculadora(4)">4</div>
+                <div class="btn" id="num5" value="5" onclick="calculadora(5)">5</div>
+                <div class="btn" id="num6" value="6" onclick="calculadora(6)">6</div>
+                <div class="btn op" id="div" value="/" onclick="calculadora('/')">/</div>
+                <!-- --------------------------------------------------------------- -->
+                <div class="btn" id="num1" value="1" onclick="calculadora(1)">1</div>
+                <div class="btn" id="num2" value="2" onclick="calculadora(2)">2</div>
+                <div class="btn" id="num3" value="3" onclick="calculadora(3)">3</div>
+                <div class="btn op" id="sub" value="-" onclick="calculadora('-')">-</div>
+                <!-- --------------------------------------------------------------- -->
+                
+                <div class="btn op" id="ponto" value="." onclick="calculadora('.')">.</div>
+                <div class="btn" id="num0" value="0" onclick="calculadora(0)">0</div>
+                <div class="btn op" id="soma" value="+" onclick="calculadora('+')">+</div>
+                <div class="btn opf" id="igual" value="=" onclick="calcular()"><i class="fa-solid fa-equals"></i></div>
+                <!-- --------------------------------------------------------------- -->
+
+            </div>
+            <!--(FIM) Elementos da calculadora  -->
+        </section>
+    </main>
+
+    <footer>
+
+
+    </footer>
+</body>
+</html>
+
+<!-- https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes -->

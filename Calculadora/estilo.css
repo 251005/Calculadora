@@ -1,0 +1,126 @@
+/*(INICIO)Var  */
+
+:root{
+    --cinza: #272a33;
+    --fun_branco:#e7edff;
+    --cinza_cla: #3d424b;
+    --azul: #2ea2ef;
+    
+}
+
+/*(FIM)Var  */
+/*(INICIO) Estilizações gerais */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-style: none;
+
+    }
+    html{
+        font-size: 2.3rem;
+        background-color: #0132722f;
+    }
+    body{
+        font-size: 62.5%;
+
+    }
+/*(FIM) Estilizações gerais */
+
+
+/*(INCIO) Estilizações especifica */
+
+    /* (INICIO) Estilizando formato da calculadora */
+        
+    
+    
+    /* (FIM) Estilizando formato da calculadora */
+
+    main{
+        width: 100%;
+        height: 100vh;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+    }
+    section.calculadora{
+        background-color: var(--cinza);
+        width: 400px;
+        min-width: 250px;
+        min-height: 50%;
+        
+        border: 10px solid var(--cinza);
+        box-shadow: 0 0 5px var(--cinza);
+        border-radius: 30px;
+        overflow: hidden;
+        margin: 20px;
+
+
+
+    }
+    /* (INICIO) Parte de resultados */
+        div.resultado{
+            width: 95%;
+            margin: 15px auto ;
+            height: 14vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            border-radius: 10px ;
+            background-color:#42454f5f ;
+            overflow: hidden;
+
+        }
+        div#result{
+            margin-right: 15px;
+            font-size: 30px;
+            color: var(--fun_branco);
+
+        }
+        div#conta_anterior{
+            margin-right: 15px;
+            color: #e7edff8b;
+
+
+        }
+
+        div.digitos{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        
+    /* (FIM) Parte de resultados */
+    
+    /* (INICIO)Estilizando botões da calculadora */
+        div.btn{
+            display: flex;
+            flex: 23%;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            background-color: #42454f5f;
+            cursor: pointer;
+            margin: 1px;
+            border-radius: 0px;
+            color: var(--fun_branco);
+            
+        }
+        div.btn:hover{
+            background-color: var(--cinza_cla);
+        }
+        div.btn.op{
+            font-weight:800;
+            color: var(--azul);
+        }
+        div.btn.opf{
+            background-color: var(--azul);
+        }
+       
+        
+    
+    /* (FIM)Estilizando botões da calculadora */
+    
+/*(FIM) Estilizações especifica */    
